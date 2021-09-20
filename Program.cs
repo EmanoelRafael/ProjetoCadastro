@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using ProjetoCadastro.Classes;
-//using ProjetoCadastro.Enum;
 
 namespace ProjetoCadastro
 {
@@ -12,9 +11,6 @@ namespace ProjetoCadastro
 
         static void Main(string[] args)
         {
-            //SRepositorio Series = new SRepositorio();
-            //FRepositorio filmes = new FRepositorio();
-            
             List<string> operacoesValidas = new List<string>();
             operacoesValidas.Add("1");
             operacoesValidas.Add("2");
@@ -31,7 +27,6 @@ namespace ProjetoCadastro
             
             while (!String.Equals(operacao.ToUpper(),"X"))
             {
-
                 switch (operacao)
                 {
                     case "1":
@@ -80,9 +75,7 @@ namespace ProjetoCadastro
             Console.WriteLine("8 - listar series.");
             Console.WriteLine("X - sair.");
             string operacao = Console.ReadLine().ToUpper();
-            //List<string> operacoesValidas = new List<string>;
-
-            //while (!String.Equals(operacao,"1")&&!String.Equals(operacao,"2")&&!String.Equals(operacao,"3")&&!String.Equals(operacao,"4")&&!String.Equals(operacao.ToUpper(),"X"))
+            
             while (!operacoesValidas.Contains(operacao))
             {
                 Console.WriteLine();
@@ -251,8 +244,6 @@ namespace ProjetoCadastro
                 i++;
             }
         }
-
-        //Series
 
         private static void insereSerie(bool funcionalidade, int id)
         {

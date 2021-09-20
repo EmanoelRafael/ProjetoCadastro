@@ -15,10 +15,7 @@ namespace ProjetoCadastro.Classes
          }
          public void Excluir(int id)
          {
-             if(id<listaSerie.Count)
-             {
-                listaSerie.RemoveAt(id);
-             }
+            listaSerie.RemoveAt(id);
          }
          public List<Serie> Lista()
          {

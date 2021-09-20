@@ -5,8 +5,6 @@ namespace ProjetoCadastro.Interfaces
 {
     public interface IRepositorio<T>
     {
-        //List<T> Lista();
-
          public void Inserir(T objeto);
          public void Excluir(int id);
          public List<T> Lista();

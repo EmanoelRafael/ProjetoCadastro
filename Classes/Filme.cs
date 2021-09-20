@@ -1,5 +1,4 @@
 using System;
-//using ProjetoCadastro.Enum;
 
 namespace ProjetoCadastro.Classes
 {
